@@ -137,10 +137,16 @@
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dispatch.c" />
+    <ClCompile Include="file_filter.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="notify_routine.c" />
+    <ClCompile Include="protect.c" />
+    <ClCompile Include="utils.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cekp.h" />
+    <ClInclude Include="native.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
