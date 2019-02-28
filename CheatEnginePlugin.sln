@@ -3,7 +3,69 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CheatEnginePlugin", "cep1.0\cep1.0.vcxproj", "{7531E2A4-895E-45B0-82DD-0E69CBFD3718}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8FA2E09F-E1BF-4F4E-9071-773CEDF42FE8}"
+	ProjectSection(SolutionItems) = preProject
+		CheatEnginePluginSDK\cepluginsdk.h = CheatEnginePluginSDK\cepluginsdk.h
+		CheatEnginePluginSDK\lauxlib.h = CheatEnginePluginSDK\lauxlib.h
+		CheatEnginePluginSDK\lua.h = CheatEnginePluginSDK\lua.h
+		CheatEnginePluginSDK\lua.hpp = CheatEnginePluginSDK\lua.hpp
+		CheatEnginePluginSDK\luaconf.h = CheatEnginePluginSDK\luaconf.h
+		CheatEnginePluginSDK\lualib.h = CheatEnginePluginSDK\lualib.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CheatEngineKernelPlugin", "CheatEngineKernelPlugin\CheatEngineKernelPlugin.vcxproj", "{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Debug|ARM.ActiveCfg = Debug|Win32
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Debug|x64.ActiveCfg = Debug|x64
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Debug|x64.Build.0 = Debug|x64
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Debug|x86.ActiveCfg = Debug|Win32
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Debug|x86.Build.0 = Debug|Win32
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Release|ARM.ActiveCfg = Release|Win32
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Release|ARM64.ActiveCfg = Release|Win32
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Release|x64.ActiveCfg = Release|x64
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Release|x64.Build.0 = Release|x64
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Release|x86.ActiveCfg = Release|Win32
+		{7531E2A4-895E-45B0-82DD-0E69CBFD3718}.Release|x86.Build.0 = Release|Win32
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|ARM.Build.0 = Debug|ARM
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|ARM.Deploy.0 = Debug|ARM
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|ARM64.Build.0 = Debug|ARM64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|x64.ActiveCfg = Debug|x64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|x64.Build.0 = Debug|x64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|x64.Deploy.0 = Debug|x64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|x86.ActiveCfg = Debug|Win32
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|x86.Build.0 = Debug|Win32
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Debug|x86.Deploy.0 = Debug|Win32
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|ARM.ActiveCfg = Release|ARM
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|ARM.Build.0 = Release|ARM
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|ARM.Deploy.0 = Release|ARM
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|ARM64.ActiveCfg = Release|ARM64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|ARM64.Build.0 = Release|ARM64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|ARM64.Deploy.0 = Release|ARM64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|x64.ActiveCfg = Release|x64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|x64.Build.0 = Release|x64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|x64.Deploy.0 = Release|x64
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|x86.ActiveCfg = Release|Win32
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|x86.Build.0 = Release|Win32
+		{CD3E7E05-E8EC-425A-962E-1B0C20B498EF}.Release|x86.Deploy.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
